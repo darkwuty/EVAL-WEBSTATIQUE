@@ -1,0 +1,198 @@
+:root {
+  --main-font-family: "Montserrat", sans-serif;
+  --main-font-size: 16px;
+}
+* {
+  a,
+  a:hover,
+  a:visited,
+  a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+  .btn {
+    background-color: rgb(0, 128, 128);
+    padding: 10px;
+  }
+  .btn:hover {
+    background-color: rgb(0, 51, 102);
+  }
+}
+html {
+  @media (max-width: 450px) {
+    font-size: 10px;
+  }
+  body {
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+    @media (max-width: 450px) {
+      font-size: 12px;
+    }
+    header {
+      height: 300px;
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 128, 128, 0.3),
+          rgba(0, 128, 128, 0.2)
+        ),
+        url(img/header_image.avif);
+      background-position: top;
+      text-align: center;
+      color: white;
+      h1 {
+        font-size: 5em;
+        font-style: italic;
+        margin: 0;
+      }
+      img {
+        width: 3.5em;
+        padding: 0 0 0 92.5rem;
+      }
+      nav {
+        ul {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          padding-left: 0;
+          li {
+            margin: 0 15px;
+          }
+        }
+      }
+    }
+    section#objectives {
+      div.container {
+        display: flex;
+        align-items: center;
+        padding: 5rem 18rem;
+        color: rgb(0, 128, 128);
+        img {
+          width: 22rem;
+          height: 21rem;
+          margin: 0 2rem;
+          object-fit: cover;
+        }
+        h2 {
+          text-decoration: underline;
+          margin-left: -4em;
+        }
+        div {
+          width: 450px;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 0;
+        li {
+          width: 50%;
+          border: 1px solid rgb(235, 235, 235);
+          padding: 40px 10px 30px;
+          img {
+            height: 48px;
+          }
+        }
+      }
+    }
+    section#contactUs {
+      background-image: linear-gradient(
+          to right,
+          rgba(0, 128, 128, 0.5),
+          rgba(0, 128, 128, 0.2)
+        ),
+        url(img/main_image.avif);
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 80px 0 80px;
+      div.container {
+        padding-left: 55rem;
+        h2 {
+          width: 400px;
+          margin-left: -4em;
+        }
+        p {
+          width: 400px;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    section#learnMore {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 40px;
+      h2 {
+        color: rgb(0, 128, 128);
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        li {
+          text-align: center;
+          .number {
+            font-size: 35px;
+            font-weight: bold;
+            color: #0a2c57;
+          }
+          .label {
+            width: 80px;
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+      .description {
+        width: 400px;
+        margin-left: 30px;
+        p {
+          color: rgba(0, 0, 0, 0.5);
+          margin-top: 50px;
+        }
+        a {
+          color: white;
+          border-radius: 5px;
+        }
+      }
+    }
+    footer {
+      background-color: #20232a;
+      color: white;
+      height: 300px;
+      margin: 0;
+      h3 {
+        color: rgb(0, 128, 128);
+        padding-right: 5px;
+        margin: 15px;
+      }
+      div {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        ul {
+          width: 30%;
+          text-align: left;
+          li {
+            list-style: none;
+            display: flex;
+          }
+        }
+        article {
+          padding-top: 20px;
+          width: 35%;
+          text-align: left;
+          img {
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}
